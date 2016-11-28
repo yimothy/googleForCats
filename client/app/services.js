@@ -5,7 +5,7 @@ angular.module('googleCats.services', [])
   var search = function(query) {
     return $http({
       method: 'GET',
-      url: 'https://api.cognitive.microsoft.com/bing/v5.0/search?q=' + query + 'for cats' +'&count=20',
+      url: 'https://api.cognitive.microsoft.com/bing/v5.0/search?q=' + query + ' for cats'+'&count=20',
       headers: {
         'Ocp-Apim-Subscription-Key': 'ebd601c68c1d42e2acd11deb4ace9dbb'
       }

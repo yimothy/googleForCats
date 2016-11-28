@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html ng-app='google-cats'>
+<html ng-app='googleCats'>
   <head>
 
-  </head>
-  <body>
+  <body ng-app='googleCats'>
     <h1>Google for Cats</h1>
-    <form>
-    <input type='text' placeholder='Search'/>
+    <div ng-view></div>
+    <script src='angular/angular.js'></script>
+        <script src='angular-route/angular-route.js'></script>
+    <script src='app/app.js'></script>
+    <script src='app/search.js'></script>
+    <script src='app/services.js'></script>
+
+    <form name='search-bar' ng-submit='search()' novalidate>
+    <input name='query'
+      type='text'
+      ng-model=data.query
+      placeholder='Meow purr meow (Search Here)'/>
+
     </form>
   </body>
 
