@@ -4,15 +4,13 @@
 
   <body ng-app='googleCats'>
     <h1>Google for Cats</h1>
-
-
     <div ng-controller='SearchController'>
+
     <form name='search-bar' ng-submit='search()' novalidate>
       <input name='query'
         type='text'
         ng-model=data.query
         placeholder='Meow (Search Here)'/>
-
     </form>
 
     <ol>

@@ -1,6 +1,5 @@
 angular.module('googleCats',
 [
-  'googleCats.services',
   'googleCats.search',
    'ngRoute'
 ])

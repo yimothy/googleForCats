@@ -1,2 +1,4 @@
 node_modules
 client/API_Key
+config/key.js
+.env
