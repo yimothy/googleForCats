@@ -3,7 +3,6 @@ angular.module('googleCats.search', [])
   $scope.data = {};
 
   $scope.search = function () {
-    console.log('THIS IS THE SEARCH QUERY IN SEARCH.JS', $scope.data.query);
     Search.search($scope.data.query)
     .then(function(queryResults) {
       console.log('THIS THE SEARCH RESULTS AFTER THE FACTORY SEARCH: ', queryResults);
