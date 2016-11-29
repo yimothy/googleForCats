@@ -37,8 +37,13 @@ angular.module('googleCats.search', [])
     'https://pbs.twimg.com/profile_images/687737847403511808/ybDKqCoN.jpg',
     'https://pbs.twimg.com/profile_images/2904725256/5ab2b154bc9321e6c57a9364c81288dd.jpeg',
     'https://i.ytimg.com/vi/prALrHUJ8Ns/hqdefault.jpg',
-    'http://s2.dmcdn.net/Ub1O8/1280x720-mCQ.jpg',
-    'https://s-media-cache-ak0.pinimg.com/564x/ff/db/78/ffdb783d33d132470318966dc1ba5ec5.jpg'
+    'https://i.ytimg.com/vi/Ea8rOZyawIs/hqdefault.jpg',
+    'https://s-media-cache-ak0.pinimg.com/564x/ff/db/78/ffdb783d33d132470318966dc1ba5ec5.jpg',
+    'https://s-media-cache-ak0.pinimg.com/originals/13/97/ba/1397baf2dde16d074b50497a50d2eb33.jpg',
+    'http://cdn2.business2community.com/wp-content/uploads/2014/10/Sushi-Cat-Halloween-Costume2.jpg2.jpg',
+    'https://s-media-cache-ak0.pinimg.com/564x/e5/dc/c0/e5dcc0d704daab8993e3aa28701f55e5.jpg',
+    'http://www.oddities123.com/wp-content/uploads/2014/03/fat-cats-4.jpg',
+    'https://www.funnypica.com/wp-content/uploads/2015/05/TOP-30-Cute-Cats-Cute-Cat-30.jpg'
   ];
 
   $scope.getRandomNum = function(){
