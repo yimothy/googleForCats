@@ -1,12 +1,11 @@
 #for {
   font-size: 22px;
   padding-top: 50px;
-  /*vertical-align: bottom;*/
-
-  /*bottom: 0px;*/
+  margin: 0px 2px 0px 2px;
 }
 #search-bar {
   margin: auto;
+  margin-bottom: 15px;
 }
 #cat-img {
   height: 10%;
@@ -15,17 +14,27 @@
 #google-img {
   height: 35%;
   width: 35%;
+  margin-bottom: 10px;
 }
 #whole{
   text-align: center;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 #results {
   margin: 0 auto;
+  margin-top: 5px;
   text-align: left;
   padding: 10px 0px 10px 10px;
   border-style: groove;
+  border-color: rgb(204, 204, 204, .5);
+  height: 120px;
   width: 800px;
+}
+#images {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
 }
 .snippet {
   margin: 0 auto;

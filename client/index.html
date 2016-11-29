@@ -16,15 +16,15 @@
           <input style='width: 650px'
           type='text'
           ng-model=data.query
-          placeholder='Meow (Search Here)'/>
+          placeholder='Meow here'/>
         </form>
 
         <ol>
           <div id='results'
           ng-repeat="result in data.results">
-          <!-- <p>Search results for "{{data.query}} for cats"</p> -->
-          <a href='{{result.url}}'>{{result.name}}</a>
-          <p class='snippet'> {{result.snippet}}</p>
+          <img id='images' src='{{data.images[getRandomNum()]}}'/>
+            <a href='{{result.url}}'>{{result.name}}</a>
+            <br><span class='snippet'> {{result.snippet}}</span>
           </div>
         <ol>
       </div>
