@@ -6,5 +6,4 @@ module.exports = function (app, express) {
   app.use(bodyParser.json());
   app.use(express.static(path.join(__dirname, '/../../node_modules')));
   app.use(express.static(path.join(__dirname, '/../../client')));
-  console.log('THIS IS THE FILE PATH DIRRRR', __dirname + '/../../client')
 };

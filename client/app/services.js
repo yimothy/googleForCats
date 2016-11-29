@@ -11,7 +11,8 @@ angular.module('googleCats.services', [])
       }
     })
     .then(function(resp) {
-      return resp.value;
+      console.log(resp.data.webPages.value);
+      return resp.data.webPages.value;
     });
   };
 

@@ -4,13 +4,13 @@ const port = 3000;
 
 var middleware = require('./config/middleware.js');
 
-app.get('/', (request, response) => {
+app.get('/', function(request, response) {
   response.sendfile('client/index.html');
 });
 
 middleware(app, express);
 
-app.listen(port, (err) => {
+app.listen(port, function(err) {
   if(err) {
     return console.log('Error occurred: ', err);
   }

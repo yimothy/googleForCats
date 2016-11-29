@@ -1,12 +1,12 @@
 angular.module('googleCats.search', [])
-.controller('SearchController', function($scope, $location, Search) {
+.controller('SearchController', function($scope, Search) {
   $scope.data = {};
-  $scope.data.query;
 
   $scope.search = function () {
+    console.log('THIS IS THE SEARCH QUERY IN SEARCH.JS', $scope.data.query);
     Search.search($scope.data.query)
     .then(function(queryResults) {
-      console.log('THIS THE SEARCH RESULTS, ', queryResults);
+      console.log('THIS THE SEARCH RESULTS AFTER THE FACTORY SEARCH: ', queryResults);
       $scope.data.results = queryResults;
 //      $location.path('/results');
     })
