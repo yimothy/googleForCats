@@ -5,7 +5,6 @@ angular.module('googleCats',
 ])
 .config(function($routeProvider, $httpProvider) {
 
-  console.log('THIS IS FROM THE ROUTER DOT WHEN');
   $routeProvider
   .when('/', {
     templateUrl: 'index.html',

@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <title>Google for Cats</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
   <body ng-app='googleCats'>
-    <h1>Google for Cats</h1>
-    <div ng-controller='SearchController'>
+    <div id='whole'>
+      <img id='google-img' src='http://www.underconsideration.com/brandnew/archives/google_2015_logo_detail.png'/>
+      <span id='for'>for</span>
+      <img id='cat-img' src='https://media.giphy.com/media/z3JF30t1ngsqQ/giphy.gif'/>
+      <div ng-controller='SearchController'>
 
-    <form name='search-bar' ng-submit='search()' novalidate>
-      <input name='query'
-        type='text'
-        ng-model=data.query
-        placeholder='Meow (Search Here)'/>
-    </form>
+        <form id='search-bar' ng-submit='search()' novalidate>
+          <input style='width: 650px'
+          type='text'
+          ng-model=data.query
+          placeholder='Meow (Search Here)'/>
+        </form>
 
-    <ol>
-      <div
-        ng-repeat="result in data.results">
-        <a href='{{result.url}}'>{{result.name}}</a>
+        <ol>
+          <div id='results'
+          ng-repeat="result in data.results">
+          <!-- <p>Search results for "{{data.query}} for cats"</p> -->
+          <a href='{{result.url}}'>{{result.name}}</a>
+          <p class='snippet'> {{result.snippet}}</p>
+          </div>
+        <ol>
       </div>
-    <ol>
   </div>
+
     <script src='angular/angular.js'></script>
     <script src='angular-route/angular-route.js'></script>
     <script src='app/app.js'></script>
     <script src='app/search.js'></script>
     <script src='app/services.js'></script>
-
   </body>
 
 </html>

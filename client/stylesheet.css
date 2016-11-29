@@ -1,0 +1,32 @@
+#for {
+  font-size: 22px;
+  padding-top: 50px;
+  /*vertical-align: bottom;*/
+
+  /*bottom: 0px;*/
+}
+#search-bar {
+  margin: auto;
+}
+#cat-img {
+  height: 10%;
+  width: 10%;
+}
+#google-img {
+  height: 35%;
+  width: 35%;
+}
+#whole{
+  text-align: center;
+  margin: 0 auto;
+}
+#results {
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  border-style: groove;
+  width: 800px;
+}
+.snippet {
+  margin: 0 auto;
+}

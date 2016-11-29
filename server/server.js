@@ -16,7 +16,7 @@ app.get('/', function(request, response) {
 app.post('/search', function(req, res) {
   var options = {
     method: 'GET',
-    url: 'https://api.cognitive.microsoft.com/bing/v5.0/search?q=' + req.body.query + ' for cats'+'&count=20  ',
+    url: 'https://api.cognitive.microsoft.com/bing/v5.0/search?q=' + req.body.query +'&count=20  ',
     headers: {
       'Ocp-Apim-Subscription-Key': process.env.key || require('./config/key.js')
     }

@@ -23,8 +23,8 @@ angular.module('googleCats.search', [])
 
 .controller('SearchController', function($scope, Search) {
   $scope.data = {};
-
   $scope.search = function () {
+    $scope.data.query = $scope.data.query + ' for cats';
     Search.search($scope.data)
     .then(function(queryResults) {
       console.log('THIS THE SEARCH RESULTS AFTER THE FACTORY SEARCH: ', queryResults);
